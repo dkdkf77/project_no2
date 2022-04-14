@@ -1,360 +1,287 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>THE LIONKING</title>
-  <link rel="stylesheet" href="css/jquery.bxslider.css">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="icon" href="images/fibicon.ico">
+  <title>다함께 차차차</title>
+  <link rel="stylesheet" href="js/css/jquery.bxslider.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/js/jquery-3.1.1.min.js"></script>
   <script src="js/js/jquery.bxslider.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    $(document).ready(function () {
-
-
-      var swiper = new Swiper(".mySwiper", {
-        pagination: {
-          el: ".swiper-pagination",
-          type: "fraction",
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-
-      var Swiper1 = new Swiper(".mySwiper1", {
-        effect: "coverflow",
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: "auto",
-        coverflowEffect: {
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: true
-        },
-        pagination: {
-          el: ".swiper-pagination"
-        }
-      });
-
-
-      AOS.init();
-
+    $(document).ready(function(){
       $('.slider').bxSlider();
-      // $('.section_fade1').fadeOut();
-      // $('.section_fade2').fadeOut();
-      // $('.section_fade3').fadeOut();
-      // $('.banner').fadeOut();
-      // $('.footer').fadeOut();
-
       // $(window).scroll(function(){
-      //   if($(this).scrollTop()>600){
-      //     $('.section_fade1').fadeIn();
-
-      //   }
-      //   if($(this).scrollTop()>1800){
-      //     $('.section_fade2').fadeIn();
-
-      //   }
-      //   if($(this).scrollTop()>2000){
-      //     $('.banner').fadeIn();
-
-      //   }
-
-      //   if($(this).scrollTop()>2700){
-      //     $('.section_fade3').fadeIn();
-      //     $('.footer').fadeIn();
-
-      //   }
-      // })//스크롤 
-
-      $(window).scroll(function () {
-        if ($(this).scrollTop() > 400) {
-          $('.section_fade1').css({
-            'background-size': '300px'
-          });
-          $('.circle_set').css({
-            'transform': 'translate(0)',
-            'opacity': '1'
-          });
-        }
-        if ($(this).scrollTop() > 1300) {
-          $('.title1').css({
-            'transform': 'translate(0)',
-            'opacity': '1'
-          });
-        }
-        if ($(this).scrollTop() > 1600) {
-          $('.title2').css({
-            'transform': 'translate(0)',
-            'opacity': '1'
-          });
-        }
-      });
-
-      var a1 = 1;
-      $('.display').click(function(){
-        if (a1 == 1){
-          $('nav>ul').show();
-          a1 = 2;
-        
-        }else{
-          $('nav>ul').hide();
-          a1 =1;
-        }
-      });
+      //   if($(this).scrollTop() > 100){
+      //     $('.headersection').addClass('header_scroll');
+      //   }else{
+      //     $('.headersection').removeClass('header_scroll');
+      //   };
+      // });
 
     });
   </script>
-
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
-  </style>
 </head>
-
 <body>
+  <div class="fix">
+    <img src="images/Background.png" alt="fix">
+    <p>내차찾기</p>
+  </div>
   <div class="wrap">
-    <header id="header">
-      <div class="inner">
-        <div class="logo"><a href="index.html"></a></div>
+    <header>
+      <div class="headersection">
         
-        <nav>
-          <li class="display"><a href="#"><img src="images/3line.png" alt="3line"></a></li>
-          <ul>
-            
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="#">CAST & CREATIVE</a></li>
-            <li><a href="#">MULTIMEDIA</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">WORLDWIDE</a></li>
-            <li><a href="#">TICKET</a></li>
-          </ul>
-        </nav>
+          <div class="nav_left">
+            <div class="logo">
+              <img src="images/logo2.png" alt="">
+            </div>
+          </div>
+          <div class="nav_left2">
+            <nav>
+              <ul>
+                <li><a href="#">내차 구매</a></li>
+                <li><a href="#">내차 판매</a></li>
+                <li><a href="#">랜트</a></li>
+                <li><a href="#">금융</a></li>
+                <li><a href="#">견적</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="nav_right">
+            <ul>
+              <li><a href="#">회원가입</li>
+              <li><a href="#">로그인</li>
+              <li><a href="#"><img src="images/glass.png" alt="검색"></a></li>
+              <li><a href="#"><img src="images/my_menu.png" alt="내정보"></a></li>
+              <li><a href="#"><img src="images/menu.png" alt="전체메뉴"></a></li>
+            </ul>
+          </div>
       </div>
     </header>
-    <section class="mainsection1">
-      
+    <section>
+      <div class="mainsection">
         <div class="slider">
-          <div><img class="mainimg1" src="images/mainbanner3.png" alt="mainbanner3"></div>
-          <div><video autoplay="1" muted="1" src="images/thekingisback.mp4"></video></div>
-          <div><video autoplay="1" muted="1" src="images/reviewes.mp4"></video></div>
+          <img src="images/mainbanner1.png" alt="중고성립1">
+          <img src="images/mainbanner1.png" alt="중고성립2">
         </div>
+      </div>
     </section>
-    <section class="section1_setting">
-      <div class="inner">
-        <div class="sect1_title">
-          <h1>NOTICE</h1>
-        </div>
-
-        <div class="section1">
-          <div class="slider">
-            <div>
-              <p>공연 가이드 변경 사항 안내 및 공연 일정 알림</p>
+    <section>
+      <div class="section2">
+        <div class="inner">
+          <div class="section2_relative">
+            <div class="sec2boxset">
+              <div class="sec2box1">
+                <img class="sec2img1" src="images/BMW_ICON.png" alt="BMW 홍보관">
+                <div class="sec2text1">
+                  <h1>BMW 홍보관 구경</h1>
+                  <p>BMW 공식 거래 성립!</p>
+                  <button>바로가기></button>
+                </div>
+              </div>
+              <div class="sec2box2">
+                <img  class="sec2img2" src="images/car_icon2.png" alt="요즘 잘나가는 중고차">
+                <div class="sec2text2">
+                  <h1>요즘 잘나가는 차량</h1>
+                  <p>요즘 어떤 중고 차량이 잘 나갈까?</p>
+                  <button>바로가기></button>
+                </div>
+              </div>
+              <div class="sec2box3">
+                <img class="sec2img3" src="images/car_icon3.png" alt="중고차 싸게 사는 법">
+                <div class="sec2text3">
+                  <h1>중고차 잘 고르는 법!</h1>
+                  <p>중고차 잘 고르는 방법을 알려드립니다.</p>
+                  <button>바로가기></button>
+                </div>
+              </div>
             </div>
-            <div>
-              <p>COVID 19 상황에 대한 공연 매너 안내사항 전달</p>
+          </div>
+        </div>
+      </div>
+    </section> 
+    <section>
+      <div class="section3">
+        <div class="inner">
+          <div class="sec3textarea">
+            <h1>HOT</h1>
+            <p>이달의 차</p>
+            <hr class="h">
+            <hr class="h2">
+          </div>
+          <div class="sec3boxarea2">
+            <div class="sec3box1">
+              <img src="images/hundae_gran.png" alt="자동차1">
+              <h3>현대 그랜져 <br>IG 3.0 익스클루시브 스페셜</h3>
+                <p>17년2월식</p>
+                <p>60,000km</p>
+                <p>가솔린</p>
+                <p>대전</p>
+                <div class="price">
+                  <h1>2,550만원</h1>
+                  <p>할부 월<span>54</span>만원</p>
+                </div>
+                <p>＃HUD＃스마트센스2＃짧은KM＃무사고<br> ＃합리적인금액＃추천</p>
+                <div class="innerbox">
+                    <div class="innerbox1">
+                      <p>1인소유</p>
+                    </div>
+                    <div class="innerbox2">
+                      <p>짧은km</p>
+                    </div>
+                    <div class="innerbox3">
+                      <p>보험이력없음</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sec3box1">
+              <img src="images/kia_k5.png" alt="자동차2">
+              <h3>기아 K5 2세대 <br>LPI MX 프레스티지</h3>
+              <p>17년5월식</p>
+              <p>72,573km</p>
+              <p>LPG</p>
+              <p>화곡</p>
+              <div class="price">
+                <h1>1,470만원</h1>
+                <p>할부 월<span>31</span>만원</p>
+              </div>
+              <p>#엔진컨디션 우수 #내구성좋은누우2.0 LPi <br> #핸들열선 #열선시트</p>
+              <div class="innerbox">
+                  <div class="innerbox1">
+                    <p>1인소유</p>
+                  </div>
+                  <div class="innerbox2">
+                    <p>짧은km</p>
+                  </div>
+                  <div class="innerbox3">
+                    <p>보험이력없음</p>
+                  </div>
+              </div>
+            </div>
+            <div class="sec3box1">
+              <img src="images/malribo.png" alt="자동차3">
+              <h3>쉐보레(GM대우) 올 뉴 말리부 <br>1.5 터보 LTZ 세부등급 없음</h3>
+              <p>17년10월식</p>
+              <p>61,486km</p>
+              <p>가솔린</p>
+              <p>경기서부</p>
+              <div class="price">
+                <h1>2,370만원</h1>
+                <p>할부 월<span>50</span>만원</p>
+              </div>
+              <p>내비게이션패키지+선루프패키지!! 쉐보레의 대표 말리부</p>
+              <div class="innerbox">
+                  <div class="innerbox1">
+                    <p>1인소유</p>
+                  </div>
+              </div>
+            </div>
+            <div class="sec3box1">
+              <img src="images/perisad.png" alt="자동차4">
+              <h3>현대 팰리세이드 가솔린 <br>3.8 2WD 프레스티지 (7인승)</h3>
+              <p>21년10월식</p>
+              <p>11,308km</p>
+              <p>가솔린</p>
+              <p>영등포</p>
+              <div class="price">
+                <h1>4,150만원</h1>
+                <p>할부 월<span>88</span>만원</p>
+              </div>
+              <p>＃디자인셀렉션웜그레이＃패밀리＃테크2 <br> ＃짧은주행</p>
+              <div class="innerbox">
+                  <div class="innerbox1">
+                    <p>짧은km</p>
+                  </div>
+                  <div class="innerbox2">
+                    <p>제조사AS</p>
+                  </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
     <section>
-      <div class="section_fade1">
+      <div class="section4">
+        <div class="sec4textarea">
+          
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="section5">
         <div class="inner">
-          <div class="section2">
-            <div class="section2_title">
-              <img src="images/sun_1.png" alt="태양">
-              <h4>2022</h4>
-                <h2>공연일정</h2>
-                <h6>※상기 일정은 내부 사정에 따라 변동 될 수 있습니다.</h6>
+          <div class="sec5textarea">
+            <h1>매물 확인</h1>
+            <p>현재 판매 중인 전체매물을 확인해 보세요.</p>
+            <hr class="h3">
+          </div>
+          <div class="sec5boxarea">
+            <div class="sec5box1">
+              <img class="car1" src="images/sedan.png" alt="승용차">
+              <p>승 용 차</p>
+              <div class="mycarfix">
+                <img src="images/Background.png" alt="fix">
+                <p>내차찾기</p>
+              </div>
             </div>
-            <div data-aos-duration="" class="circle_set">
-              <div class="circle1">
-                <h2>서 울</h2>
-                <h6>2022.01.26 ~ 2022.03.18</h6>
-                <h4>오페라극장</h4>
-                <div class="Dday1">
-                  <h1>
-                    D+42
-                  </h1>
-                </div>
+            <div class="sec5box2">
+              <img class="car2" src="images/suv2.png" alt="suv">
+              <p>S U V</p>
+              <div class="mycarfix">
+                <img src="images/Background.png" alt="fix">
+                <p>내차찾기</p>
               </div>
-              <div class="circle2">
-              </div>
-              <div class="circle3">
-                <h2>부 산</h2>
-                <h6>2022.04.01 ~ 2022.05.06</h6>
-                <h4>드림씨어터</h4>
-                <div class="Dday2">
-                  <h1>
-                    D-23
-                  </h1>
-                </div>
-              </div>
-              <div class="circle4">
+            </div>
+            <div class="sec5box3">
+              <img class="car3" src="images/bmw.png" alt="">
+              <p>외 제 차</p>
+              <div class="mycarfix">
+                <img src="images/Background.png" alt="fix">
+                <p>내차찾기</p>
               </div>
             </div>
           </div>
-          <hr class="hr1">
         </div>
       </div>
     </section>
-    <section class="section_fade2">
-      <div class="inner">
-        <div class="section3">
-          <div class="subsection1">
-            <div class="title1">
-              <div class="title1_left">
-              </div>
-              <div class="title1_right">
-                <img src="images/star5.png" alt="star">
-                <h3>“THERE IS SIMPLY<br>
-                  NOTHING ELSE LIKE IT”</h3>
-                <h6>“어디에도 이런 공연은 없었다!”</h6>
-                <p>신랄한 비평으로 알려진 뉴욕타임즈조차<br>
-                  ‘배우가 연기하는 동물들의 놀랍고 이상<br>
-                  적인 모습은 신의 손길마저 느껴진다’라고<br>
-                  극찬했다.</p>
-                <h5>바로가기 ></h5>
-              </div>
-            </div>
-            <div class="subsection2">
-              <div class="title2">
-                <div class="title2_right">
-                </div>
-                <div class="title2_left">
-                  <img src="images/star5.png" alt="star">
-                  <h3>“QUITE SIMPLY, STUNNING”</h3>
-                  <h6>“한마디로 경이적인!”</h6>
-                  <p>무대을 여는 ‘서클 오브 라이프(Circle of Life)’부터 무대를 닫는<br>‘서클 오브 라이프(Circle of Life)’까지 한 순간도 놓칠 수
-                    없는<br>아프리카
-                    정글의 생생함 속으로 심바와 함께 여정을 떠나보자.<br>우리 삶을 우울하게 하는 코로나19를 잠시 나마 잊을 수 있을 것이다.</p>
-                  <h5>바로가기 ></h5>
-                </div>
-                
-              </div>
-            </div>
+    <footer>
+      <div class="footersec">
+        <div class="inner">
+          <div class="footleft">
+            <nav>
+              <ul>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">이메일무단수집거부</a></li>
+                <li><a href="#">오시는길</a></li>
+                <li><a href="#">사이트맵</a></li>
+                <li><a href="#">ENG</a></li>
+              </ul>
+            </nav>
           </div>
-        </div>
-        <hr class="hr1">
-    </section>
-
-
-    <section class="section_fade3">
-
-      <div class="banner">
-        <div class="onlyimg"></div>
-        <div class="subbannertext">
-          <h3>라피키가 가져온<br>최대 1만원 할인 쿠폰!</h3>
-          <h5>바로가기 ></h1>
+          <div class="right">
+            <select name="Familly Site" id="site">
+              <option value="직영점">직영점</option>
+              <option value="직영점1">서울</option>
+              <option value="직영점2">대전</option>
+              <option value="직영점3">대구</option>
+              <option value="직영점4">부산</option>
+            </select>
+            <select name="Familly Site" id="site">
+              <option value="협력사">FAMILY SITE</option>
+              <option value="협력사1">BMW 센터</option>
+              <option value="협력사2">현대 자동차</option>
+              <option value="협력사3">기아 자동차</option>
+              <option value="협력사4">쉐보레</option>
+            </select>
+          </div>
         </div>
       </div>
-      <div class="inner">
-        <div class="Reviewes">
-          <div class="title3">
-            <h3>THE WAIT IS OVER!</h3>
-            <h6>"한국에서 원어로 만날 다시 없을 기회!"</h6>
-            <h2>관람 후기</h2>
-          </div>
-
-          <div class="swiper1 mySwiper1">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="reviewrect1">
-                  <div class="reviewcircle1">
-                    <h5>"최고의 연출력"</h5>
-                    <h6>dkdkf312</h6>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="reviewrect2">
-                  <div class="reviewcircle2">
-                    <h5>“안 본 사람 없게 해주세요”</h5>
-                    <h6>ryurael</h6>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="reviewrect3">
-                  <div class="reviewcircle3">
-                    <h5>“뉴욕에서 본 라이온킹 뮤지컬<br>
-                      잊을 수가 없어 예매 했어요”</h5>
-                    <h6>NEWYORKER12</h6>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="reviewrect4">
-                  <div class="reviewcircle4">
-                    <h5>“죽기 전 한번은 꼭!<br>
-                      봐야할 뮤지컬”</h5>
-                    <h6>onelife33</h6>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="reviewrect5">
-                  <div class="reviewcircle5">
-                    <h5>"이거는 아주 그냥 봐야합니다"</h5>
-                    <h6>dkdkf11</h6>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-          <button class="btn1">자세히 보기</button>
-        </div>
-      </div>
-    </section>
-    <footer class="footer">
-      <div class="inner">
-        <div class="flogo">
-          <img src="images/footerlogo2.png" alt="footerlogo">
-        </div>
-        <div class="title">
-          <div>
-            <h6>개인정보처리방침</h6>
-            <h6>이메일정보무단수집거부</h6>
-          </div>
-          <div class="sns">
-            <img src="images/facebook.png" alt="facebook">
-            <img src="images/youtube.png" alt="youtube">
-            <img src="images/insta.png" alt="insta">
-          </div>
-        </div>
-        <div class="right">
-          <h5>사업자등록번호 211-86-93404 클립서비스㈜ 설도권<br>
-            통신판매신고번호 제2008-서울강남-2331호<br>
-            Copyright 2021 CLIP SERVICE Inc. All rights reserved.</h5>
-        </div>
-      </div>
-
     </footer>
-    <div>
-      <div class="top">
-        <a href="#header">
-          <img src="images/top_shape.png" alt="top">
-        </a>
-        <h3>TOP</h3>
-      </div>
-      <div class="ticket">
-        <img src="images/sun_3.png" alt="ticket">
-        <h3>TICKET</h3>
-      </div>
-    </div>
   </div>
 </body>
-
 </html>
